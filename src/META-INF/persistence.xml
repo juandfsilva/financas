@@ -6,8 +6,10 @@
 	<persistence-unit name="financas">
 		<!-- Implementa��o do JPA, no nosso caso Hibernate -->
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<!-- Aqui s�o listadas todas as entidades -->
+		
+		<!-- Aqui s�o listadas todas as entidades do BD -->
 		<class>br.com.caelum.financas.modelo.Conta</class>
+		<class>br.com.caelum.financas.modelo.Movimentacao</class>
 		<properties>
 			<!-- Propriedades JDBC -->
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
